@@ -1,0 +1,37 @@
+<div class="all-container">
+    <div class="header-container">
+        <div class="left">
+            <h1>EDUBEX</h1>
+        </div>
+        <div class="right">
+            <div class="links">
+                <div class="main" (click)="dropdown1()">Programiz <fa-icon [icon]="arrowIcon"></fa-icon></div>
+                <div class="drop" *ngIf="dropdownShow1">
+                    <div>program1</div>
+                    <div>program2</div>
+                    <div>program2</div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="main" (click)="dropdown2()">Enterprise <fa-icon [icon]="arrowIcon"></fa-icon></div>
+                <div class="drop" *ngIf="dropdownShow2">
+                    <div>program1</div>
+                    <div>program2</div>
+                    <div>program2</div>
+                </div>
+            </div>
+            <div class="links">
+                <div class="main" (click)="dropdown3()">Upcoming Events <fa-icon [icon]="arrowIcon"></fa-icon></div>
+                <div class="drop" *ngIf="dropdownShow3">
+                    <div>program1</div>
+                    <div>program2</div>
+                    <div>program2</div>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Get started</button>
+            </div>
+            
+        </div>
+    </div>
+</div>

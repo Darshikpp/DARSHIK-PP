@@ -1,0 +1,65 @@
+<div class="main-img"></div>
+<div class="all-container">
+    <div class="container">
+        <div class="image-container">
+
+
+            <div class="title">
+                <h1>Career</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum expedita est molestias dolores ex quasi mollitia voluptas.</p>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="hero">
+
+        <div class="second-row">
+            <div class="left">
+                <p style="color: rgb(0, 113, 75);" [innerHTML]="jobOpeningsData.description"></p>
+                <div class="btn"><button>Job Openings</button></div>
+            </div>
+            <div class="right">
+                <div class="img">
+                    <img src="https://media.istockphoto.com/id/539444770/photo/work-with-the-people-that-motivate-and-inspire-you.jpg?s=612x612&w=0&k=20&c=DNpkder0ZLzC5Aq0KQ_fiK4xa7CZPAh47-Vxw_R_9Ww=" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="third-row">
+
+            <div class="left">
+                <div class="img">
+                    <img [src]="datas.image" alt="">
+                </div>
+                
+            </div>
+            <div class="right">
+                <h1>{{datas.title}}</h1>
+                <div style="padding: 10px 0 ; width: 700px;" [innerHTML]="datas.description"></div>
+                <!-- <ul style="padding: 10px 0 ; width: 700px; word-wrap: break-word;">
+                    <li style="padding: 10px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque alias culpa ducimus tempora eius!Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque alias culpa ducimus tempora eius!</li>
+                    <li style="padding: 10px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque alias culpa ducimus tempora eius!</li>
+                    <li style="padding: 10px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error atque alias culpa ducimus tempora eius!</li>
+                </ul> -->
+            </div>
+        </div>
+
+        <div class="forth-row" style.background-image="url('{{benefits.image}}')">
+
+            <div class="box">
+                <h1> {{benefits.title}} </h1>
+                <h5 [innerHTML]="benefits.description"></h5>
+            </div>
+
+            <div class="box-2">
+                <p style="color: rgb(33, 216, 33);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dicta nihil excepturi inventore sapiente provident eaque, maxime, in recusandae ad, mollitia aliquam blanditiis earum est!
+                </p>
+            </div>
+           
+        </div>
+
+
+        <app-career-list></app-career-list>
+    </div>
+</div>
